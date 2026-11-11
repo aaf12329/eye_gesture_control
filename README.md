@@ -172,13 +172,18 @@ git add .gitattributes
 
 ## 上传到 GitHub
 
-本目录已执行 `git init` 并完成首次提交，远程仓库需你自己建好后关联：
+仓库已推送到 **<https://github.com/aaf12329/eye_gesture_control>**（`origin` / `main` 已配置，直接 `git push` 即可增量推送）。
+
+克隆：
 
 ```powershell
-cd C:\Users\Guards\Desktop\eye_gesture_control
-git remote add origin https://github.com/<你的账号>/eye_gesture_control.git
-git branch -M main
-git push -u origin main
+git clone https://github.com/aaf12329/eye_gesture_control.git
+```
+
+提交邮箱使用的是 GitHub noreply 地址（`308818295+aaf12329@users.noreply.github.com`），因为账号开启了「阻止命令行推送暴露私有邮箱」，普通邮箱会被 `GH007` 拒绝。换机器时保持同样的配置即可：
+
+```powershell
+git config user.email '308818295+aaf12329@users.noreply.github.com'
 ```
 
 推送前确认 `git ls-files` 里没有超过 100 MB 的文件（`checkpoints/resnet18_110.pth`、`shape_predictor_68_face_landmarks.dat` 已被忽略）。
