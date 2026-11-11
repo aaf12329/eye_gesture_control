@@ -1,0 +1,36 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 运行产物 ----------
+outputs/
+result.csv
+*.log
+calib*.json
+
+# ---------- 超大权重文件 ----------
+# shape_predictor_68_face_landmarks.dat 约 95 MB、resnet18_110.pth 约 98 MB，
+# 接近 GitHub 单文件 100 MB 硬限制，仓库不提交，按 README「模型文件清单」自行放回。
+# 如确实要入库，请改用 Git LFS：git lfs track "*.pth" "*.dat"
+shape_predictor_68_face_landmarks.dat
+checkpoints/resnet18_110.pth

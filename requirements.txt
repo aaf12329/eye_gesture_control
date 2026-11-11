@@ -1,0 +1,12 @@
+# Python 3.10（参考环境：D:\Anaconda_envs\mul_pro，版本号取自该环境实际安装）
+# 安装：python -m pip install -r requirements.txt
+
+opencv-python>=4.8          # 已验证 5.0.0.93
+numpy>=1.24                 # 已验证 2.2.6
+scipy>=1.10                 # 已验证 1.15.2（main_control.py 的中值绝对偏差）
+torch>=2.0                  # 已验证 2.14.1
+torchvision>=0.15           # 已验证 0.29.1（RetinaFace 主干网络）
+dlib>=19.24                 # 已验证 20.0.1（68 点人脸关键点）
+onnxruntime>=1.16           # 已验证 1.23.2（手势识别推理；有 CUDA 时自动启用 GPU）
+pyserial>=3.5               # 已验证 3.5（串口发送控制指令）
+pillow>=10.0                # 已验证 12.3.0（retinaface.py 中的 PIL 引用）
